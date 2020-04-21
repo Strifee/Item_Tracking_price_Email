@@ -20,7 +20,7 @@ def price_Track():
     price = soup.find(itemprop="price").get_text()      # price of the priduct
     rounded_price = float(price[0:3])  # 0 -> 3 to get only the first numbers not the dollar signe o
 
-    if(rounded_price < 250):   # the price you want to track 
+    if(rounded_price < 300):   # the price you want to track 
         sendEmail()
     
     print('PRODUCT: ' + title.strip())
